@@ -1,0 +1,22 @@
+{
+  "name": "scl-2018-01-proyectofinalcore",
+  "version": "1.0.0",
+  "description": "El registro de visitantes en una empresa en América Latina es un proceso tedioso y manual. Lo común es que una persona esté en la recepción tomando nota - a veces con papel y lápiz - de cada visitante. Por razones de seguridad, usualmente piden a cada visitante dejar una identificación. Si vivimos en la era digital, ¿por qué seguimos registrando visitantes como si fuera 1985? ¿Qué tal si sustituimos a la persona en recepción por una tablet? ¿Qué tal si en lugar de pedir una identificación, tomamos una foto?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mia5391/scl-2018-01-ProyectoFinalCore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mia5391/scl-2018-01-ProyectoFinalCore/issues"
+  },
+  "homepage": "https://github.com/Mia5391/scl-2018-01-ProyectoFinalCore#readme",
+  "dependencies": {
+    "mailer": "^0.6.7"
+  }
+}
