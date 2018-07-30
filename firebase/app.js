@@ -11,7 +11,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
-addVisitor = (name, rut, email, destination, subject, time) => {
+window.addVisitor = (name, rut, email, destination, subject, time,anfitrion, patente, credencial) => {
   const newVisitorKey = firebase.database().ref().child('visitors').push().key;
 
   firebase.database().ref('visitorsInside/' + newVisitorKey).set({
@@ -24,22 +24,25 @@ addVisitor = (name, rut, email, destination, subject, time) => {
     rut: rut,
     email: email,
     destination: destination,
+    anfitrio: anfitrion,
     subject: subject,
     checkingTime: time,
-    checkoutTime: ''
+    checkoutTime: '',
+    patente: patente,
+    credencial: credencial
   });
 }
-getAllVisitors = () => {
+window.getAllVisitors = () => {
   return firebase.database().ref('visitors').once('value');
 }
-getVisitorsInside = () =>{
-  return firebase.database().ref('visitorsInside').once('value');
+window.getVisitorsInside = () =>{
+  return firebase.database().ref('visitorsInside')
 }
-checkoutVisitor = (id,time) => {
+window.checkoutVisitor = (id,time) => {
   firebase.database().ref(`visitors/${id}`).update({ checkoutTime: time});
   return  firebase.database().ref(`visitorsInside/${id}`).remove()
 }
-getVisitorData = (id)=>
+window.getVisitorData = (id)=>
 {
     return firebase.database().ref(`visitors/${id}`).once('value').then(
     (visitor) => {

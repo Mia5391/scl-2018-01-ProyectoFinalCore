@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Visitantes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8">
+                <form>
+
+                    <div class="input-field  ">
+                        <input id="name" type="text" required>
+                        <label for="name">Nombre completo *</label>
+                    </div>
+                    <div class="input-field ">
+                        <input id="rut" type="text" required>
+                        <label for="rut">Rut *</label>
+                    </div>
+                    <div class="input-field">
+                        <select id="destination">
+        <option value="" disabled selected>Selecciona un destino</option>
+        <option value="1">Laboratoria</option>
+        <option value="2">Cafe</option>
+        <option value="3">Imprenta</option>
+    </select>
+                        <label>Destino</label>
+                    </div>
+
+                    <div class="input-field">
+                        <select id="anfitrion">
+        <option value="" disabled selected>Selecciona un anfitrión</option>
+        <option value="1">Vale</option>
+        <option value="2">Belen</option>
+        <option value="3">Carla</option>
+    </select>
+                        <label>Anfitrión</label>
+                    </div>
+                    <div class="input-field ">
+                        <input id="subject" type="text">
+                        <label for="subject">Motivo de visita</label>
+                    </div>
+                    <div class="input-field ">
+                        <input id="email" type="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field ">
+                        <input id="credencial" type="text" required>
+                        <label for="credencial">credencial</label>
+                    </div>
+                    <div class="col s4">
+                        <p>
+                            <label>
+        <input type="checkbox" />
+        <span>Vehiculo</span>
+    </label>
+                        </p>
+                    </div>
+                    <div class="col s8">
+
+                        <div class="input-field ">
+                            <input id="patente" type="text" required>
+                            <label for="patente">Patente</label>
+                        </div>
+                    </div>
+                    <input type="file" type="submit" name="file" id="file" class="inputfile" onchange="" value="subir" />
+                    <label for="file">
+                    <i class="material-icons right">add_a_photo</i>
+                    </label>
+
+
+                </form>
+                <div class="row">
+                    <button class="btn waves-effect waves-light" id="send" onclick="validation()">Ingresar
+                    <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+
+                <div class="col s4">
+
+                    <p id="status"></p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script src="../firebase/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+        <script src="./assets/main.js"></script>
+</body>
+
+</html
