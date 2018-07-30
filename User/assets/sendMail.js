@@ -1,19 +1,25 @@
 // using SendGrid's v3 Node.js Library
 // https://github.com/sendgrid/sendgrid-nodejs
-window.sendMail=()=>{
-  try {
-    const sgMail = require('@sendgrid/mail');
-    sgMail.setApiKey('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');
-    const msg = {
-      to: 'mjormy.ec@gmail.com',
-      from: 'test@example.com',
-      subject: 'Sending with SendGrid is Fun',
-      text: 'and easy to do anywhere, even with Node.js',
-      html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-    };
-    sgMail.send(msg);
-  }
-  catch(error) {
-      alert(error);
-  }
+
+function sendMail(){
+  const recipientEmail = 'ifsclreception@gmail.com';
+  const visitorName = 'Maya';
+
+  const sender = 'reception@if.com';
+  const emailSubject = 'You have a visitor';
+  const emailBody = visitorName + ' is coming to visit you.';
+
+
+var templateParams = {
+    name: 'James',
+    notes: 'Check this out!'
+};
+
+emailjs.send('<YOUR SERVICE ID>', '<YOUR TEMPLATE ID>', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+});
 };
