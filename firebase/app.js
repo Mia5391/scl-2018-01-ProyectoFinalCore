@@ -33,7 +33,7 @@ window.addVisitor = (name, rut, email, destination, subject, time,anfitrion, pat
   });
 }
 window.getAllVisitors = () => {
-  return firebase.database().ref('visitors').once('value');
+  return firebase.database().ref('visitors');
 }
 window.getVisitorsInside = () =>{
   return firebase.database().ref('visitorsInside')
@@ -47,5 +47,5 @@ window.getVisitorData = (id)=>
     return firebase.database().ref(`visitors/${id}`).once('value').then(
     (visitor) => {
     return visitor
-   }) 
+   })
 }
