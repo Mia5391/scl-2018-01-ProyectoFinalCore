@@ -3,103 +3,62 @@
 El registro de visitantes en una empresa en América Latina es un proceso tedioso y manual. Lo común es que una persona esté en la recepción tomando nota - a veces con papel y lápiz - de cada visitante. Por razones de seguridad, usualmente piden a cada visitante dejar una identificación. Si vivimos en la era digital, ¿por qué seguimos registrando visitantes como si fuera 1985? ¿Qué tal si sustituimos a la persona en recepción por una tablet? ¿Qué tal si en lugar de pedir una identificación, tomamos una foto? 
 
 ## Introducción
-En este proyecto la empresa de coworking donde opera Laboratoria en tu ciudad ha decidido contratarte a ti y a dos compañeras para reinventar su proceso de registro de visitantes. Con la entrada de [WeWork](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwilrK_T5KjcAhWCj7MKHexzAEgYABAAGgJxbg&ohost=www.google.cl&cid=CAASE-RoAxXTp1Cd0ErxEHpPSGuF4Hk&sig=AOD64_38ykNPf0QRtI9n4CFtpQpth-MrNQ&q=&ved=0ahUKEwjswKvT5KjcAhVkU98KHUcYCeMQ0QwIJA&adurl=) al mercado latinoamericano, tienen mucha más competencia y necesitan invertir en tecnología para mejorar su servicio; el registro de visitantes es un primer acercamiento. Te dan la referencia de [Envoy](https://envoy.com/) en EEUU (un servicio que ofrece un sistema digital de registro de visitantes) y ustedes tienen que desarrollar una versión mínima viable (ver anexo I). 
+En este proyecto la empresa de IF blanco coworking ha decidido reinventar su proceso de registro de visitantes. La problemática a la que se enfrentaban era la falta de comunciación entre la recepción,el espacio y el vehículo, administración y los encargados de cada organización. Por el momento sólo cuentan con una planilla excel donde ingresan todos los datos, si falta este medio, registran los datos en papel donde luego ingresan los datos de forma manual.
 
-## Objetivos de aprendizaje
-El objetivo principal de este proyecto es que pongas en práctica todo lo aprendido durante el common core, con foco en la calidad, trabajando en un equipo multifuncional y presentando tu solución a una audiencia.
-### Consideraciones generales
-Para completar este proyecto deberás trabajar en un equipo de tres y seguir las siguientes consideraciones:
-   * Planificación y organización
-   * Roles, squad multifuncional
-   
-Cada integrante del equipo debe asumir alguno de los siguientes “roles” (*) liderando las siguientes áreas de trabajo:
-   * Diseñadora UX
-      Diseñar la experiencia de la aplicación (flujo, interacción, etc.).
-      Identificar, documentar y priorizar las historias de usuario.
-      Crear el diseño visual de la interfaz.
-   * Desarrolladoras Front-end
-      Implementar la interfaz de usuario diseñada (HTML/CSS/JS).
-      Deben dividirse las funcionalidades entre las dos desarrolladoras.
-      Todas los desarrollos deben incluir pruebas unitarias.
+Diseñamos un sistema de registros accesible a diferentes tipos de visitantes, cuya funcionalidad es facilitar el registro de visitantes. Las tres grandes funciones son: registrar los datos del visitante, visualizar los datos de las personas ingresadas en el día y poder seleccionar la salida, donde luego estos datos son guardados en una tabla.
+    
+El sistema de registro está enfocado en modernizar el proceso de registro de visitas a IF blanco.
 
-*Al no haber rol de Product Manager, las responsabilidades de gestión son compartidas entre todas las integrantes.*
+## Usuarios
 
-## Planificación inicial
-Es muy importante que al dividirse/distribuir/repartir el trabajo, lo hagan pensando de manera ágil y no en cascada. Es decir, si una de ustedes está esperando a que otra termine “su parte” para empezar a trabajar, algo anda mal, [¡eso se parece a la organización del trabajo industrial!](https://media.giphy.com/media/OQ872dEsRi8cU/source.gif). Todas son responsables del producto final y todas pueden (y deben) colaborar en el diseño, el desarrollo y la planificación.
+El sistema de registro está enfocado en tres usuarios:
+    - Administrador: es capaz de visualizar todos los datos del visitante registrado, además de tener acceso a la vista del recepcionista y es capaz de registrar una visita si lo quisiera.
+    - Recepción: puede ver los datos de las personas registradas en el día, hacer check out de la persona por su número de credencial, tiene acceso a registrar visitas.
+    - Visita: puede registrarse en IF blanco para ingresar 
 
-### TIPS:
+Las entrevistas fueron vitales para entender la problemática a la cual se enfrentaban, además de ayudarnos a definir a los principales usuarios y visitantes de IF blanco.
+[Entrevistas](https://drive.google.com/open?id=1zKtdYXtt6d9VvrUTc15kjilr-FKFJWnf) 
 
-   * Recuerda a nuestras nuevas BFFs, [las historias de usuario](http://jmbeas.es/guias/historias-de-usuario/)
-   * Ten siempre en mente evitar el desperdicio. Por ejemplo: ¿de qué sirve que tengas el prototipo del 100% de un proyecto en              Figma (alta definición) si solamente implementas el 50% del proyecto? El otro 50% del prototipo se podría considerar como desperdicio.
-   * Limitar el trabajo en progreso. Si son 3 personas, procuren no tener más de 3 tareas a la vez en “doing”.
-   * ¿Estás segura de que quieren seguir invirtiendo más minutos de tu vida (que no volverán) en discutir los colores del logotipo? [Aquí hay algo que te puede ayudar a decidir](https://play.google.com/store/apps/details?id=com.flip.war_daddy.flip_coin).
+[Acceso a todo el proceso UX]()
 
-## Detalles sobre la implementación
-  * La lógica del proyecto debe estar implementada completamente en JavaScript (ES6), HTML y CSS. 
-  * Está permitido usar librerías o frameworks tanto de CSS como de JS, pero no es obligatorio. Elige bien las batallas que quieres luchar.
-  * En este proyecto, no contamos con un boilerplate, por lo que deberás definir la estructura de carpetas y archivos que consideres necesaria, puedes guiarte de los proyectos anteriores. 
-  * Los tests y el setup necesario para ejecutarlos serán hechos enteramente por ti. 
-  * Para armar las interfaces visuales utiliza como base alguna de estas guías de componentes:
-    * [Guía Desktop 1](https://www.figma.com/file/F3aUqpHWOfZsEQifTPIleXo6/material-kit-free)
-    * [Guía Desktop 2](https://www.figma.com/file/S39H0B1LOnaVICIUiApFTfoP/_Style-Guide---Desktop---Style-Guide)
-    * [Guía Mobile 1](https://www.figma.com/file/00VTwmTNvLVaBLkxrMFbT8/Google-Material-Design)
-    * [Guía Mobile 2](https://www.figma.com/file/O2Xraz3mraQHvevNsicMl91V/ejemplos-2)
-  * Guardar la data de los visitantes de forma remota usando [Firebase](https://firebase.google.com/). 
-  * A nivel de arquitectura:
-    * El uso de Firebase implica que debes trabajar bajo una arquitectura serverless. 
-    * Te sugerimos que desacoples el proyecto en componentes y manejo de estados para que trabajes de forma ordenada y facilite la implementación de tus tests. Revisa la [charla](https://www.youtube.com/watch?v=g_BxnUJTUSk) y el [blog post](https://medium.com/laboratoria-developers/arquitectura-de-interfaces-web-parte-1-a41053c2a1f2) de Lupo sobre este tema ;)
+## Planificación
+Para organizar y planificar las tareas que llevaron a la solución del proyecto usamos Trello.
 
-## Tiempo
-Tendrán 3 días para trabajar en este proyecto. Este tiempo es un poco corto para iterar y hacer las ceremonias que usualmente hacemos. Puedes elegir hacer tus sprints o simplemente correr un único sprint con “hitos”. Es decisión del equipo. Lo que sí les recomendamos es asegurar que usan bien los dailys, esto les permitirá hacer “mini” iteraciones cada 24 horas.
+Para visualizar la planificación:
+[Trello](https://trello.com/b/EgQghFoA/sistema-de-registro)
 
-## Entregables obligatorios
-Los criterios mínimos de aceptación para considerar que has completado este proyecto son:
+# Diseño
+Nos hemos enfocado en aplicar todo lo que hemos aprendido en terminos de UX research y habilidades blandas, para priorizar las características de nuestro sistema de la mejor manera.
 
-### Diseño:
-Entregables de diseño :
-  * Haber realizado y documentado (con fotos, videos, aprendizajes, etc.)  al menos 3 entrevistas con usuarios diferentes.
-  * Haber probado de “cliente incógnito” el registro de visitas en WeWork y compararla con tu solución y con la referencia que te brindaron ([Envoy](https://envoy.com/)).
-  * Entregar un prototipo clickeable de alta fidelidad hecho en [Figma](https://www.figma.com/) u otro editor gráfico como Illustrator, Photoshop, PowerPoint, Keynote, etc. linkeado con [Marvel](https://marvelapp.com/) / [Invision](https://www.invisionapp.com/).
-  * Haber hecho y documentado (con fotos, videos, aprendizajes, lista de cambios realizados, etc.) sesiones de testing del prototipo con usuarios.
+En el proceso de diseño hicimos un estudio de referencia a dos organizaciones con sistemas de ingreso diferentes. Uno de ellos es Envoy; y otro Launch Coworking, la cuál visitamos de manera incógnita.
 
-### Implementación:
-  * Tu producto final debe estar desplegado en la web y, como mínimo, debe:
-  * Permitir al usuario visitante registrarse con sus datos personales, incluyendo su foto.
-  * Permitir al usuario visitante seleccionar a la persona a quien viene a visitar.
-  * Notificar a la persona a quien vienen a visitar. Para esto te recomendamos revisar:
-    * Los servicios de [Sendgrid](https://sendgrid.com/ )
-    * El API de [Mandrill](https://mandrillapp.com/docs/) para mandar correos de forma automática
-    * El [API de notificaciones de HTML 5](https://developer.mozilla.org/en-US/docs/Web/API/notification)
-  * Permitir al usuario administrador visualizar la data de los visitantes, incluyendo la fecha y hora de registro de cada uno
-  * Los tests unitarios deben cubrir un mínimo del 70% de statements, functions y lines, y un mínimo del 50% de branches. 
+El resultado de nuestros prototipos incorpora parte del proceso de registro, funcionalidad y estructura de diseño que nos resultaron interesantes. Definimos la paleta de colores en relación a IF blanco, el sistema de registro fue pensado para ellos exclusivamente, de modo de resolver la problemática.
 
-### Presentación:
-Deberás hacer dos presentaciones ante un jurado que te dará feedback inmediatamente. La primera será a mitad de semana para compartir tu avance y la segunda será al final de la semana para compartir tu producto final.
-#### Las reglas para las dos presentaciones son:
-  * Tendrás 3 minutos de presentación, ni un segundo más.
-  * Habrán 2 minutos para preguntas del jurado.
-  * Te recomendamos que la mayoría del tiempo lo enfoque en demostrar cómo se utiliza tu producto, el cual debe estar desplegado en la web. 
-  * NO se permite presentar cosas en tu local ni videos previamente grabados.
-  * NO inviertas tiempo presentándote, ni listando al equipo, ni dando una introducción que ya el jurado conoce. Como al hacer el producto, en la presentación también debes priorizar qué decir.
-  * NO utilices slides de powerpoint, enfócate en presentar tu DEMO.
-  * Durante el DEMO, enfócate en narrar y explicar el valor que tu producto le brinda al usuario.
-  * Cuida tu lenguaje no verbal; recuerda mirar al público y tener un tono de voz adecuado para que toda la audiencia te pueda escuchar.
-  * Idealmente debe presentar una sola integrante del equipo. Si deciden que presenta más de una persona, asegúrense de haber coordinado bien el flujo de la presentación.
+La creación de prototipos fue un proceso largo, en el que, a medida que ibamos testeando y probando las funcionalidades, íbamos iterando sobre éstos.
 
-### Hacker edition
-Features/características extra sugeridas:
-  * Como el WiFi a veces es nuestro peor enemigo, ¿es posible que tu aplicación pueda, sin Internet, registrar los datos del visitante, guardar los datos localmente y cuando tenga Internet mandarlos a la base de datos? Si te animas a hacer esto dale una revisada a los siguientes recursos:
-    * [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
-    * [Offline first manifesto](http://offlinefirst.org/)
-    * También sería ideal poder registrar la firma del visitante en el registro.
-  * Sería genial también permitir generar un “pase” para el visitante, así fácilmente a la vista se sabe quién está de visita.
-  * Al administrador le interesa tener un dashboard de “analíticas” de los visitantes: # de visitantes por día, horarios frecuentes de visita, a quién vienen a visitar, etc.
+Proceso de diseño:
+- [Paleta de colores y logos](https://drive.google.com/open?id=18__cFXwKez4zVDgrJfMRmkfwIwmP-Vta)
+- [Estudio de referencia](https://drive.google.com/open?id=1u7VJj6hDFAsc3zl5pjvQhi70dBE13m9-)
+- [Sketch1 y test de usabilidad](https://drive.google.com/open?id=1WbmBijOFyIaOARiLKiYXZzWhZRequ8Wn)
+- [Sketch2 y test de usabilidad](https://drive.google.com/open?id=1USSgs6hFlF5LqX2MDuVnpzvwizwYHMb-)
+- [Sketch3 y lista de cambios](https://drive.google.com/open?id=1tHSOdG9XXlHC7ckO3mXJbsyPrHG_4jCl)
 
-## Anexo I: Construyendo un MVP
-Una modelo mental común para representar el desarrollo de productos es visualizarlo como una pirámide: el producto que construyes consiste en una serie de funcionalidades que le dan beneficios al usuario, los cuales le generan valor. El detalles está en que no todas las funcionalidades que creas le agregan la misma cantidad de valor al usuario. Es más, muchas funcionalidades le agregan cero valor. Son cosas que creemos que generan valor, pero que no terminan haciéndolo (recuerda que vivimos en un mundo incierto, donde no podemos predecir). Por lo tanto, al definir tu producto mínimo viable (MVP), tu misión es crear las mínimas funcionalidades que maximicen el valor que entregas. Menos es más ;)
-![image](https://user-images.githubusercontent.com/7809496/43321432-d253abe8-9179-11e8-8d08-44a44db6ed0a.png)
 
-## Anexo II: Envío de emails
-Para poder hacer envíos de email necesitas un servicio. Aquí te dejamos un acceso a una cuenta de Mandrill de Laboratoria para que la puedas utilizar en tu proyecto.
+#Cambios realizados en el mockup
 
-Host: smtp.mandrillapp.com Port: 587 SMTP Username: Laboratoria.La SMTP Password: Yjbhl-WzBGJbqv5w5n-y9w
+Los cambios realizados fueron en función de decisiones ejecutivas hechas en el equipo, con el fin de visualizar la información. 
+
+Se empezó por una vista básica de las pantallas que formarán parte de la aplicación. (link1)
+De ahí se fue añadiendo el flujo y despliegue paso a paso, para tener una mejor idea del flujo para los distintos usuarios. (link2)
+
+En la tercera iteración optimizamos las funcionalidades de acuerdo a lo que quisimos alcanzar en nuestra primera iteración funcional. (link3)
+
+- [Mockup1](https://www.figma.com/file/TgrNlWctUcmQimOHDyiwQ9Ye/Sistema-de-registro-1)
+- [Mockup2](https://www.figma.com/file/naNj19U2FidQZCPvdaprVb/Sistema-de-registro-2)
+- [Mockup3](https://www.figma.com/file/97mOuNCJBEoEfN2FrrMPQ1/Sistema-de-registro-final?node-id=0%3A1)
+- [Prototipo alta fidelidad](https://www.figma.com/proto/97mOuNCJBEoEfN2FrrMPQ1/Sistema-de-registro-final?node-id=59%3A519&scaling=scale-down)
+
+# Proyecto
+
+Para acceder al demo del sistema de registro:
+[Sistema de registro](https://estephanyc.github.io/scl-2018-01-ProyectoFinalCore/public/)
