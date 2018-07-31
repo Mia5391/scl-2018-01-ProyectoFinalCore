@@ -8,7 +8,7 @@ let transporter = nodemailer.createTransport(url);
 
 exports.enviarEmail2 = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
-    let remetente = '"Adson Rocha" <email@gmail.com>';
+    let remetente = req;
 
     let assunto = 'test';
     let destinatarios = 'mariakrasteva5391@gmail.com'; // lista de e-mails destinatarios separados por ,
