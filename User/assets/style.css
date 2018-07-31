@@ -1,3 +1,29 @@
+.background-dark {
+    background-color: #000000
+}
+
+.logo {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.container {
+    margin-top: 3rem
+}
+
+.btn {
+    color: #2a2a2a;
+    font-size: 19px;
+}
+
+.center {
+    text-align: center;
+}
+
+.pd {
+    margin-bottom: 5rem
+}
+
 .status {
     padding: 10px;
     font-size: 1.3rem;
@@ -12,20 +38,29 @@
 }
 
 .inputfile+label {
-    color: white;
-    background-color: #82bd3f;
+    color: black;
     display: inline-block;
-    padding: 3px 7px;
     cursor: pointer;
     border-radius: 4px;
 }
 
-.inputfile:focus+label,
-.inputfile+label:hover {
-    background-color: #3d3c3c;
+.fullWidth {
+    width: 18rem;
 }
 
-.inputfile:focus+label {
-    outline: 1px dotted #000;
-    outline: -webkit-focus-ring-color auto 5px;
+.icons {
+    font-size: 40px;
+}
+
+.icons:hover {
+    color: #2a2a2a
+}
+
+.input-field>label {
+    color: #000;
+    font-size: 18px
+}
+
+.pointer {
+    cursor: pointer
 }

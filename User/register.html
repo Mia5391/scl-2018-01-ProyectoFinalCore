@@ -20,91 +20,98 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col s12 m8">
-                <form>
+            <div class="col s12 m8 offset-m2">
+                <div class="row">
+                    <div class="col s3 left">
+                        <img src="../img/logo-black.png" width="60" alt="">
+                    </div>
+                    <div class="col s6 left">
+                        <span>Llena el formulario a continuación, todos los campos son obligatorios</span>
+                    </div>
+                    <div class="col s3 left">
+                        <i class="material-icons icons right pointer" onclick="history.back()">subdirectory_arrow_left</i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <form method="post">
+                            <div class="input-field  ">
+                                <input id="name" name="nombre" type="text" required>
+                                <label for="name">Nombre completo *</label>
+                            </div>
+                            <div class="input-field ">
+                                <input id="rut" name="rut" type="text" required>
+                                <label for="rut">Rut *</label>
+                            </div>
 
-                    <div class="input-field  ">
-                        <input id="name" type="text" required>
-                        <label for="name">Nombre completo *</label>
-                    </div>
-                    <div class="input-field ">
-                        <input id="rut" type="text" required>
-                        <label for="rut">Rut *</label>
-                    </div>
-                    <div class="input-field">
-                        <select id="destination">
-        <option value="" disabled selected>Selecciona un destino</option>
-        <option value="1">Laboratoria</option>
-        <option value="2">Cafe</option>
-        <option value="3">Imprenta</option>
+                            <div class="input-field">
+                                <select id="destination" required>
+        <option value="" disabled selected>Destino</option>
+        <option value="Laboratoria">Laboratoria</option>
+        <option value="Aguas lab">Aguas lab</option>
+        <option value="Robotics">Robotics lab</option>
+<option value="Fabrica de medios">Fabrica de medios</option>
+<option value="Cafe altura">Cafe altura</option>
     </select>
-                        <label>Destino</label>
-                    </div>
+                            </div>
 
-                    <div class="input-field">
-                        <select id="anfitrion">
-        <option value="" disabled selected>Selecciona un anfitrión</option>
-        <option value="1">Vale</option>
-        <option value="2">Belen</option>
-        <option value="3">Carla</option>
+                            <div class="input-field">
+                                <select id="anfitrion" required>
+        <option value="" disabled selected>Anfitrión</option>
+        <option value="vale">Vale</option>
+        <option value="Belen">Belen</option>
+        <option value="Carla">Carla</option>
     </select>
-                        <label>Anfitrión</label>
-                    </div>
-                    <div class="input-field ">
-                        <input id="subject" type="text">
-                        <label for="subject">Motivo de visita</label>
-                    </div>
-                    <div class="input-field ">
-                        <input id="email" type="email" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="input-field ">
-                        <input id="credencial" type="text" required>
-                        <label for="credencial">credencial</label>
-                    </div>
-                    <div class="col s4">
-                        <p>
-                            <label>
-        <input type="checkbox" />
-        <span>Vehiculo</span>
-    </label>
-                        </p>
-                    </div>
-                    <div class="col s8">
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6 ">
+                                    <select id="subject" required>
+    <option value="" disabled selected>Subject</option>
+    <option value="Entrevista">Entrevista</option>
+    <option value="Reunión">Belen</option>
+    <option value="Otro">Otro</option>
+</select>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="credencial" type="text" required>
+                                    <label for="credencial" required>Credencial *</label>
+                                </div>
+                            </div>
+                            <div class="input-field ">
+                                <input id="email" type="email">
+                                <label for="email">Email</label>
+                            </div>
 
-                        <div class="input-field ">
-                            <input id="patente" type="text" required>
-                            <label for="patente">Patente</label>
+                            <div class="input-field ">
+                                <input id="patente" type="text">
+                                <label for="patente">Patente</label>
+                            </div>
+                            <div class="row">
+                                <div class="col s3">
+                                    <input type="file" accept="image/*;capture=camera" name="file" id="file" class="inputfile" onchange="" value="subir" />
+                                    <label for="file">
+                            <i class="material-icons right icons">add_a_photo</i>
+                            </label>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="col s9">
+                            <button class="btn white-text  grey darken-3 right" id="send" onclick="validation()">Ingresar
+                             <i class="material-icons right">send</i>
+                             </button>
                         </div>
                     </div>
-                    <input type="file" type="submit" name="file" id="file" class="inputfile" onchange="" value="subir" />
-                    <label for="file">
-                    <i class="material-icons right">add_a_photo</i>
-                    </label>
 
-
-                </form>
-                <div class="row">
-                    <button class="btn waves-effect waves-light" id="send" onclick="validation()">Ingresar
-                    <i class="material-icons right">send</i>
-                    </button>
                 </div>
-
-
-                <div class="col s4">
-
-                    <p id="status"></p>
-                </div>
-
-
+                <div id="status"></div>
             </div>
-        </div>
-        <script src="./assets/sendMail.js" charset="utf-8"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-        <script src="../firebase/app.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-        <script src="./assets/main.js"></script>
+
+            <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+            <script src="../firebase/app.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+            <script src="./assets/main.js"></script>
 </body>
 
 </html

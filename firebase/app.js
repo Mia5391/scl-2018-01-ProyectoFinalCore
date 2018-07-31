@@ -11,11 +11,11 @@ var config = {
 };
 firebase.initializeApp(config);
 
-window.addVisitor = (name, rut, email, destination, subject, time,anfitrion, patente, credencial) => {
+window.addVisitor = (name, rut, email, destination, subject, time,anfitrion, patente, credencial, photo) => {
   const newVisitorKey = firebase.database().ref().child('visitors').push().key;
 
   firebase.database().ref('visitorsInside/' + newVisitorKey).set({
-    id: newVisitorKey
+    id: newVisitorKey, credencial: credencial
   });
 
   return firebase.database().ref('visitors/' + newVisitorKey).set({
@@ -29,11 +29,12 @@ window.addVisitor = (name, rut, email, destination, subject, time,anfitrion, pat
     checkingTime: time,
     checkoutTime: '',
     patente: patente,
-    credencial: credencial
+    credencial: credencial,
+    photo: photo
   });
 }
 window.getAllVisitors = () => {
-  return firebase.database().ref('visitors');
+  return firebase.database().ref('visitors')
 }
 window.getVisitorsInside = () =>{
   return firebase.database().ref('visitorsInside')
@@ -47,5 +48,14 @@ window.getVisitorData = (id)=>
     return firebase.database().ref(`visitors/${id}`).once('value').then(
     (visitor) => {
     return visitor
-   })
+   }) 
+}
+window.searchVisitorInside = (credencial) =>{
+   return firebase.database().ref('visitorsInside').once("value").then(
+    (results) => {
+      return  Object.entries(results.val()).find(
+        visitor => visitor[1].credencial == credencial
+      );
+    }
+  )
 }
