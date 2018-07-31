@@ -1,11 +1,3 @@
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     var elems = document.querySelectorAll('select');
-//     var instances = M.FormSelect.init(elems, options);
-// });
-
-// Or with jQuery
-
 $(document).ready(function () {
     $('select').formSelect();
 });
@@ -40,8 +32,7 @@ validation = () => {
             .then(url => {
                 urlPhoto = url
                 addVisitor(name, rut, email, destination, subject, time, anfitrion, patente, credencial, urlPhoto).then(response => {
-                     sendEmail()
-                    //location.href= "sucesfull.html"
+                     //sendEmail()
                 });
                 
             }); 
@@ -49,12 +40,15 @@ validation = () => {
     }
 };
 sendEmail = () => {
-       fetch('https://us-central1-recepcion-de-visitantes.cloudfunctions.net/enviarEmail2', {
+    fetch('https://us-central1-visitor-reception.cloudfunctions.net/enviarEmail2', {
         method: 'POST',
         body: 'maitilydevidasi@gmail.com',
     })
-        .then((response) => response.json())
-        .catch((error) => {
+   .then(function (value) {
+       
+    })
+    .catch((error) => {
             console.log(error)
         });
+    location.href = "sucesfull.html"
 }

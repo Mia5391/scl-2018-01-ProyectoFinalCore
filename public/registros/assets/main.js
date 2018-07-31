@@ -60,6 +60,11 @@ searchVisitor =(credencial)=>{
         })
 }
 search.addEventListener("change", function () {
-let credencial = search.value
-    searchVisitor(credencial)
+    let credencial = search.value
+    if(credencial === ''){
+        showVisitors()
+    }
+    else{
+        searchVisitor(credencial)
+    }
 });
