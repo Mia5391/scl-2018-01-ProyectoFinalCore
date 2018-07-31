@@ -32,25 +32,18 @@ validation = () => {
             .then(url => {
                 urlPhoto = url
                 addVisitor(name, rut, email, destination, subject, time, anfitrion, patente, credencial, urlPhoto).then(response => {
-                     sendEmail()
-                    location.href = "sucesfull.html"
-
-                });
-                
-            }); 
-       
                     sendEmail()
                     register.style.display = "none"
                     sucesfull.style.display = 'block';
                     timeout()
-                    document.getElementById('name').value =''
-                    document.getElementById('rut').value =''
-                    document.getElementById('email').value =''
+                    document.getElementById('name').value = ''
+                    document.getElementById('rut').value = ''
+                    document.getElementById('email').value = ''
                     document.getElementById('credencial').value = ''
-                    document.getElementById('patente').value =''
+                    document.getElementById('patente').value = ''
                     document.getElementById('subject').value = ''
                     document.getElementById('destination').value = 'Destino'
-                   document.getElementById('anfitrion').value = ''
+                    document.getElementById('anfitrion').value = ''
 
                 });
             }); 
@@ -66,8 +59,6 @@ sendEmail = () => {
             console.log(error)
         });
     
-}
-
 }
 
 function timeout() {
