@@ -32,7 +32,9 @@ validation = () => {
             .then(url => {
                 urlPhoto = url
                 addVisitor(name, rut, email, destination, subject, time, anfitrion, patente, credencial, urlPhoto).then(response => {
-                     //sendEmail()
+                     sendEmail()
+                    location.href = "sucesfull.html"
+
                 });
                 
             }); 
@@ -43,12 +45,10 @@ sendEmail = () => {
     fetch('https://us-central1-visitor-reception.cloudfunctions.net/enviarEmail2', {
         method: 'POST',
         body: 'maitilydevidasi@gmail.com',
-    })
-   .then(function (value) {
-       
+    }).then(response => {
     })
     .catch((error) => {
             console.log(error)
         });
-    location.href = "sucesfull.html"
+    
 }

@@ -11,16 +11,21 @@ showVisitors = ()=>{
                   <div class="col s1 m1">
                     <p>${visitor.credencial}</p>
                   </div>
-                   <div class="col s3 m2">
+                   <div class="col s2 m2">
                     <img src="${visitor.photo}">
                   </div>
-                  <div class="col s5 m6">
+                  <div class="col s5 m4">
                     <p>${visitor.name}</p>
+                    <p>${visitor.destination}</p>
                   </div>
-                   <div class="col s3 right m3">
-                    <p>  <i class="material-icons right checkout" onclick="checkout('${visitor.id}')">keyboard_tab
-
-                    </i></p><span>checkout<span>
+                  <div class="col s3 m4">
+                    <p><span>Hora de entrada<span>  
+                    <p>${visitor.checkingTime}</p>
+                  </div>
+                   <div class="col s1 right m1">
+                   <span>Salida</span>
+                    <i class="material-icons right checkout" onclick="checkout('${visitor.id}')">keyboard_tab
+                    </i>
                     </div>
                 </div>`
           })
@@ -40,20 +45,25 @@ searchVisitor =(credencial)=>{
                 visitor = visitor.val()
                 visitorList.innerHTML =''
                 visitorList.innerHTML += `
-               <div class="row visitor">
-                  <div class="col s1">
+                <div class="row visitor">
+                  <div class="col s1 m1">
                     <p>${visitor.credencial}</p>
                   </div>
-                   <div class="col s2">
+                   <div class="col s2 m2">
                     <img src="${visitor.photo}">
                   </div>
-                  <div class="col s4">
+                  <div class="col s5 m4">
                     <p>${visitor.name}</p>
+                    <p>${visitor.destination}</p>
                   </div>
-                   <div class="col s3 right">
-                    <p>  <i class="material-icons right checkout" onclick="checkout('${visitor.id}')">keyboard_tab
-
-                    </i></p><span>checkout<span>
+                  <div class="col s3 m4">
+                    <p><span>Hora de entrada<span>  
+                    <p>${visitor.checkingTime}</p>
+                  </div>
+                   <div class="col s1 right m1">
+                   <span>Salida</span>
+                    <i class="material-icons right checkout" onclick="checkout('${visitor.id}')">keyboard_tab
+                    </i>
                     </div>
                 </div>`
             })
