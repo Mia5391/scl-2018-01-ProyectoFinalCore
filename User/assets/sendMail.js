@@ -1,9 +1,9 @@
 function sendMail() {
-            document.getElementById('send').addEventListener('onclick', function(event) {
-                event.preventDefault();
-                this.contact_number.value = Math.random() * 100000 | 0;
-                emailjs.send('gmail', 'new_visitor', this);
-            });
+    document.getElementById('send').addEventListener('onclick', function(event) {
+    event.preventDefault();
+    this.contact_number.value = Math.random() * 100000 | 0;
+    emailjs.send('gmail', 'new_visitor', this);
+    });
 
 
 
