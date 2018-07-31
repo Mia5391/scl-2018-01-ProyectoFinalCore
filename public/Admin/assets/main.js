@@ -31,12 +31,11 @@ showAllVisitors = () => {
                   </div>
                   <div class="col s4">
                     <p>${visitor.name}</p>
-                     <p>${visitor.rut}</p>
                     <p>${visitor.email}</p>
+                     <p>${visitor.rut}</p>
                   </div>
                   <div class="col s3">
                     <p>${visitor.destination}</p>
-                     <p>${visitor.anfitrio}</p>
                      <p>${visitor.subject}</p>
                   </div>
 
