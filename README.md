@@ -61,4 +61,4 @@ En la tercera iteración optimizamos las funcionalidades de acuerdo a lo que qui
 # Proyecto
 
 Para acceder al demo del sistema de registro:
-[Sistema de registro](https://estephanyc.github.io/scl-2018-01-ProyectoFinalCore/public/)
+[Sistema de registro](https://mia5391.github.io/scl-2018-01-ProyectoFinalCore/public/)
