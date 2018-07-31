@@ -7,10 +7,19 @@
 .visitor img {
     border-radius: 100px;
     border: 3px solid #ffffff;
-    width: 90%;
+    border: 3px solid #ffffff;
+    width: 100%;
+    height: 110px;
 }
 
-.visitor p {}
+.visitor-time {
+    color: #004E8C
+}
+
+.visitor-destino {
+    color: #555555;
+    font-weight: bold;
+}
 
 .visitor p span {
     font-size: 15px
