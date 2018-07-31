@@ -33,7 +33,7 @@ validation = () => {
                 urlPhoto = url
                 addVisitor(name, rut, email, destination, subject, time, anfitrion, patente, credencial, urlPhoto).then(response => {
                      sendEmail()
-                    location.href = "sucesfull.html"
+                    //location.href = "sucesfull.html"
 
                 });
                 
