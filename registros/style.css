@@ -1,0 +1,28 @@
+.visitor {
+    background-color: #f2f1f1;
+    border-radius: 5px;
+    padding: 10px
+}
+
+.visitor img {
+    border-radius: 100px;
+    border: 3px solid #ffffff;
+    width: 100%;
+}
+
+.visitor p {
+    font-size: 20px
+}
+
+.checkout {
+    cursor: pointer
+}
+
+.container {
+    margin-top: 3rem
+}
+
+.link {
+    color: #000;
+    font-size: 18px;
+}

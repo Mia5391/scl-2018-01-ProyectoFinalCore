@@ -22,4 +22,4 @@ emailjs.send('<YOUR SERVICE ID>', '<YOUR TEMPLATE ID>', templateParams)
        console.log('FAILED...', error);
     });
 });
-};
+}
