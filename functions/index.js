@@ -8,12 +8,15 @@ let transporter = nodemailer.createTransport(url);
 
 exports.enviarEmail2 = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
-    let remetente = '"Adson Rocha" <email@gmail.com>';
+    console.log(req);
+    console.log(res);
 
-    let assunto = 'test';
-    let destinatarios = 'mariakrasteva5391@gmail.com'; // lista de e-mails destinatarios separados por ,
-    let corpo = 'something';
-    let corpoHtml = 'somethingHTML';
+    let remetente = '"IF Reception" <ifsclreception@gmail.com>';
+
+    let assunto = 'Nueva visita';
+    let destinatarios = req.body; // lista de e-mails destinatarios separados por ,
+    let corpo = req;
+    let corpoHtml = 'nueva visita';
 
     let email = {
         from: remetente,
