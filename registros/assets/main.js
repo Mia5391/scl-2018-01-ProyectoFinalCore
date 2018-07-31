@@ -8,16 +8,16 @@ showVisitors = ()=>{
               visitor = visitor.val()
               visitorList.innerHTML += `
                <div class="row visitor">
-                  <div class="col s1">
+                  <div class="col s1 m1">
                     <p>${visitor.credencial}</p>
                   </div>
-                   <div class="col s2">
+                   <div class="col s3 m2">
                     <img src="${visitor.photo}">
                   </div>
-                  <div class="col s4">
+                  <div class="col s5 m6">
                     <p>${visitor.name}</p>
                   </div>
-                   <div class="col s3 right">
+                   <div class="col s3 right m3">
                     <p>  <i class="material-icons right checkout" onclick="checkout('${visitor.id}')">keyboard_tab
 
                     </i></p><span>checkout<span>
