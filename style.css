@@ -1,0 +1,25 @@
+.background-dark {
+    background-color: #000000
+}
+
+.logo {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.container {
+    margin-top: 3rem
+}
+
+.btn {
+    color: #2a2a2a;
+    font-size: 19px;
+}
+
+.center {
+    text-align: center;
+}
+
+.pd {
+    margin-bottom: 5rem
+}

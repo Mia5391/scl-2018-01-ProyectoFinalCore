@@ -13,6 +13,7 @@
 
 .btn {
     color: #2a2a2a;
+    font-size: 19px;
 }
 
 .center {
@@ -39,7 +40,6 @@
 .inputfile+label {
     color: black;
     display: inline-block;
-    padding: 3px 7px;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -54,4 +54,13 @@
 
 .icons:hover {
     color: #2a2a2a
+}
+
+.input-field>label {
+    color: #000;
+    font-size: 18px
+}
+
+.pointer {
+    cursor: pointer
 }

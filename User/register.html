@@ -29,8 +29,7 @@
                         <span>Llena el formulario a continuación, todos los campos son obligatorios</span>
                     </div>
                     <div class="col s3 left">
-                        <i class="material-icons icons right">subdirectory_arrow_left
-</i>
+                        <i class="material-icons icons right pointer" onclick="history.back()">subdirectory_arrow_left</i>
                     </div>
                 </div>
                 <div class="row">
@@ -44,63 +43,68 @@
                                 <input id="rut" type="text" required>
                                 <label for="rut">Rut *</label>
                             </div>
+
                             <div class="input-field">
-                                <select id="destination">
-        <option value="" disabled selected>Selecciona un destino</option>
-        <option value="1">Laboratoria</option>
-        <option value="2">Cafe</option>
-        <option value="3">Imprenta</option>
+                                <select id="destination" required>
+        <option value="" disabled selected>Destino</option>
+        <option value="Laboratoria">Laboratoria</option>
+        <option value="Aguas lab">Aguas lab</option>
+        <option value="Robotics">Robotics lab</option>
+<option value="Fabrica de medios">Fabrica de medios</option>
+<option value="Cafe altura">Cafe altura</option>
     </select>
-                                <label>Destino</label>
                             </div>
 
                             <div class="input-field">
-                                <select id="anfitrion">
-        <option value="" disabled selected>Selecciona un anfitrión</option>
+                                <select id="anfitrion" required>
+        <option value="" disabled selected>Anfitrión</option>
         <option value="vale">Vale</option>
         <option value="Belen">Belen</option>
         <option value="Carla">Carla</option>
     </select>
-                                <label>Anfitrión</label>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6 ">
+                                    <select id="subject" required>
+    <option value="" disabled selected>Subject</option>
+    <option value="Entrevista">Entrevista</option>
+    <option value="Reunión">Belen</option>
+    <option value="Otro">Otro</option>
+</select>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="credencial" type="text" required>
+                                    <label for="credencial" required>Credencial *</label>
+                                </div>
                             </div>
                             <div class="input-field ">
-                                <input id="subject" type="text">
-                                <label for="subject">Motivo de visita</label>
-                            </div>
-                            <div class="input-field ">
-                                <input id="email" type="email" required>
+                                <input id="email" type="email">
                                 <label for="email">Email</label>
                             </div>
-                            <div class="input-field ">
-                                <input id="credencial" type="text" required>
-                                <label for="credencial">credencial</label>
-                            </div>
+
                             <div class="input-field ">
                                 <input id="patente" type="text">
                                 <label for="patente">Patente</label>
                             </div>
-                            <input type="file" accept="image/*;capture=camera" name="file" id="file" class="inputfile" onchange="" value="subir" />
-                            <label for="file">
-<i class="material-icons right icons">add_a_photo</i>
-                    </label>
-
-
+                            <div class="row">
+                                <div class="col s3">
+                                    <input type="file" accept="image/*;capture=camera" name="file" id="file" class="inputfile" onchange="" value="subir" />
+                                    <label for="file">
+                            <i class="material-icons right icons">add_a_photo</i>
+                            </label>
+                                </div>
+                            </div>
                         </form>
-                        <div class="row">
-                            <button class="btn waves-effect waves-light" id="send" onclick="validation()">Ingresar
-                    <i class="material-icons right">send</i>
-                    </button>
+
+                        <div class="col s9">
+                            <button class="btn white-text  grey darken-3 right" id="send" onclick="validation()">Ingresar
+                             <i class="material-icons right">send</i>
+                             </button>
                         </div>
-
-
-                        <div class="col s4">
-
-                            <p id="status"></p>
-                        </div>
-
-
                     </div>
+
                 </div>
+                <div id="status"></div>
             </div>
 
             <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>

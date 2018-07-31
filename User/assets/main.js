@@ -40,6 +40,7 @@ validation = () => {
             .then(url => {
                 urlPhoto = url
                 addVisitor(name, rut, email, destination, subject, time, anfitrion, patente, credencial, urlPhoto).then(response => {
+                    location.href= "sucesfull.html"
                 });
             }); 
        
