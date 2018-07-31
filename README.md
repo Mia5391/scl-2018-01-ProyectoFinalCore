@@ -19,7 +19,7 @@ El sistema de registro está enfocado en tres usuarios:
 Las entrevistas fueron vitales para entender la problemática a la cual se enfrentaban, además de ayudarnos a definir a los principales usuarios y visitantes de IF blanco.
 [Entrevistas](https://drive.google.com/open?id=1zKtdYXtt6d9VvrUTc15kjilr-FKFJWnf) 
 
-[Acceso a todo el proceso UX]()
+[Acceso a todo el proceso UX](https://drive.google.com/open?id=1hxV_eG697EpSzEOuroR8BzE7finrKJk5)
 
 ## Planificación
 Para organizar y planificar las tareas que llevaron a la solución del proyecto usamos Trello.
@@ -61,4 +61,4 @@ En la tercera iteración optimizamos las funcionalidades de acuerdo a lo que qui
 # Proyecto
 
 Para acceder al demo del sistema de registro:
-[Sistema de registro](https://estephanyc.github.io/scl-2018-01-ProyectoFinalCore/public/)
+[Sistema de registro](https://mia5391.github.io/scl-2018-01-ProyectoFinalCore/public/)
