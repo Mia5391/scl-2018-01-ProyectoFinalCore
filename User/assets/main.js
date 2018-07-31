@@ -40,9 +40,7 @@ validation = () => {
             .then(url => {
                 urlPhoto = url
                 addVisitor(name, rut, email, destination, subject, time, anfitrion, patente, credencial, urlPhoto).then(response => {
-                    let data = new FormData()
-                    console.log(data)
-                     sendEmail('destinatario', name)
+                     sendEmail()
                     //location.href= "sucesfull.html"
                 });
                 
@@ -50,7 +48,7 @@ validation = () => {
        
     }
 };
-sendEmail = (destinatario, name) => {
+sendEmail = () => {
        fetch('https://us-central1-recepcion-de-visitantes.cloudfunctions.net/enviarEmail2', {
         method: 'POST',
         body: 'maitilydevidasi@gmail.com',
