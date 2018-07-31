@@ -10,8 +10,10 @@ body{
 }
 .logIn{
     max-width: 50%;
-    padding: 0%;
 }
 .btn{
     margin-top: 6%;
+}
+.email{
+    padding-top: 10%;
 }
