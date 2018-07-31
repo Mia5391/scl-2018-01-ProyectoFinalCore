@@ -63,4 +63,9 @@
 
 .pointer {
     cursor: pointer
+
+}
+
+#sucesfull {
+    display: none
 }
