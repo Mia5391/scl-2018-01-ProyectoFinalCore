@@ -2,19 +2,19 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Administración</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Administración</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Compiled and minified CSS -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css" />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css" />
 
 </head>
 
@@ -24,7 +24,13 @@
             <div class="col s6">
                 <img src="../img/logo-black.png" width="60" alt="">
             </div>
-            <div class="col s6">
+            <div class="col s4">
+                <a class="link right" href="../User/register.html"> Registrar visita
+                    <i class="material-icons right">add_circle</i>
+                </a>
+            </div>
+            <div class="col s2 left">
+                <i class="material-icons icons right pointer" onclick="history.back()">subdirectory_arrow_left</i>
             </div>
 
         </div>
@@ -32,12 +38,12 @@
             <div class="input-field col s12">
                 <i class="material-icons prefix">
                 </i>
-              <div class="email">
-              <input type="email" id="user-email" placeholder="Correo" required>
-              </div>
-            <div class="password">
-              <input type="password" id="user-password" placeholder="Contraseña" required>
-            </div>
+                <div class="email">
+                    <input type="email" id="user-email" placeholder="Correo" required>
+                </div>
+                <div class="password">
+                    <input type="password" id="user-password" placeholder="Contraseña" required>
+                </div>
 
             </div>
 
@@ -45,8 +51,8 @@
                 <button class="btn white-text  grey darken-3 right" id="entrar" onclick="validateEmailAndPassword()">Ingresar
                  <i class="material-icons right">send</i>
                  </button>
+            </div>
         </div>
-    </div>
     </div>
 
 
