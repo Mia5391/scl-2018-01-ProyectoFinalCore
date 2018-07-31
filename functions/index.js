@@ -8,8 +8,7 @@ let transporter = nodemailer.createTransport(url);
 
 exports.enviarEmail2 = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
-    console.log(req);
-    console.log(res);
+    let remetente = req;
 
     let remetente = '"IF Reception" <ifsclreception@gmail.com>';
 

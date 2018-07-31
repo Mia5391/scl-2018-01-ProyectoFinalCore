@@ -40,9 +40,23 @@ validation = () => {
             .then(url => {
                 urlPhoto = url
                 addVisitor(name, rut, email, destination, subject, time, anfitrion, patente, credencial, urlPhoto).then(response => {
-                    location.href= "sucesfull.html"
+                    let data = new FormData()
+                    console.log(data)
+                     sendEmail('destinatario', name)
+                    //location.href= "sucesfull.html"
                 });
+                
             }); 
        
     }
 };
+sendEmail = (destinatario, name) => {
+       fetch('https://us-central1-recepcion-de-visitantes.cloudfunctions.net/enviarEmail2', {
+        method: 'POST',
+        body: 'maitilydevidasi@gmail.com',
+    })
+        .then((response) => response.json())
+        .catch((error) => {
+            console.log(error)
+        });
+}
