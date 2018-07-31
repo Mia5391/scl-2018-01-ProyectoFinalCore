@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+.logo {
+    text-align: center;
+    margin-top: 10em;
+}
+.input-field{
+    background-color: white;
+}
+.logIn{
+    max-width: 50%;
+    padding: 0%;
+}
+.btn{
+    margin-top: 6%;
+}

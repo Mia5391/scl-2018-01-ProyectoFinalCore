@@ -9,6 +9,9 @@ Diseñamos un sistema de registros accesible a diferentes tipos de visitantes, c
     
 El sistema de registro está enfocado en modernizar el proceso de registro de visitas a IF blanco.
 
+Para acceder al demo del sistema de registro:
+[Sistema de registro](https://mia5391.github.io/scl-2018-01-ProyectoFinalCore/public/)
+
 ## Usuarios
 
 El sistema de registro está enfocado en tres usuarios:
@@ -27,7 +30,7 @@ Para organizar y planificar las tareas que llevaron a la solución del proyecto 
 Para visualizar la planificación:
 [Trello](https://trello.com/b/EgQghFoA/sistema-de-registro)
 
-# Diseño
+## Diseño
 Nos hemos enfocado en aplicar todo lo que hemos aprendido en terminos de UX research y habilidades blandas, para priorizar las características de nuestro sistema de la mejor manera.
 
 En el proceso de diseño hicimos un estudio de referencia a dos organizaciones con sistemas de ingreso diferentes. Uno de ellos es Envoy; y otro Launch Coworking, la cuál visitamos de manera incógnita.
@@ -44,7 +47,7 @@ Proceso de diseño:
 - [Sketch3 y lista de cambios](https://drive.google.com/open?id=1tHSOdG9XXlHC7ckO3mXJbsyPrHG_4jCl)
 
 
-#Cambios realizados en el mockup
+##Cambios realizados en el mockup
 
 Los cambios realizados fueron en función de decisiones ejecutivas hechas en el equipo, con el fin de visualizar la información. 
 
@@ -58,7 +61,3 @@ En la tercera iteración optimizamos las funcionalidades de acuerdo a lo que qui
 - [Mockup3](https://www.figma.com/file/97mOuNCJBEoEfN2FrrMPQ1/Sistema-de-registro-final?node-id=0%3A1)
 - [Prototipo alta fidelidad](https://www.figma.com/proto/97mOuNCJBEoEfN2FrrMPQ1/Sistema-de-registro-final?node-id=59%3A519&scaling=scale-down)
 
-# Proyecto
-
-Para acceder al demo del sistema de registro:
-[Sistema de registro](https://mia5391.github.io/scl-2018-01-ProyectoFinalCore/public/)

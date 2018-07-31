@@ -14,40 +14,38 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/index.css" />
 
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col s6">
-                <a href="../index.html">
-                    <img src="../img/logo-black.png" width="60" alt=""></a>
+            <div class="col s12 logo center">
+                    <img src="../img/LOGO.png" alt="">
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="input-field col s12 m9">
-                <i class="material-icons prefix">
-                </i>
-                <div class="email">
-                    <input type="email" id="user-email" placeholder="Correo" required>
+    <section class="container logIn" >
+            <div class="row log">
+                <div class="input-field col s12">
+                    <div class="email">
+                        <i class="material-icons prefix">person</i><input type="email" id="user-email" placeholder="Correo" required>
+                    </div>
+                    <div class="row">
+                    <div class="input-field col s12">
+                    <div class="password">
+                        <i class="material-icons prefix lock">lock</i><input type="password" id="user-password" placeholder="Contraseña" required>
+                    </div>
+                <div class="col s9">
+                    <button class="btn white-text  grey darken-3 right" id="entrar" onclick="validateEmailAndPassword()">Ingresar
+                        <i class="material-icons right">send</i>
+                    </button>
                 </div>
-                <div class="password">
-                    <input type="password" id="user-password" placeholder="Contraseña" required>
-                </div>
-
-            </div>
-
-            <div class="col s9">
-                <button class="btn white-text  grey darken-3 right" id="entrar" onclick="validateEmailAndPassword()">Ingresar
-                    <i class="material-icons right">send</i>
-                </button>
             </div>
         </div>
     </div>
-
-
+</section>
     <script src="./assets/adminLogin.js"></script>
 </body>
 

@@ -32,6 +32,13 @@ validation = () => {
             .then(url => {
                 urlPhoto = url
                 addVisitor(name, rut, email, destination, subject, time, anfitrion, patente, credencial, urlPhoto).then(response => {
+                     sendEmail()
+                    location.href = "sucesfull.html"
+
+                });
+                
+            }); 
+       
                     sendEmail()
                     register.style.display = "none"
                     sucesfull.style.display = 'block';
@@ -58,6 +65,9 @@ sendEmail = () => {
     .catch((error) => {
             console.log(error)
         });
+    
+}
+
 }
 
 function timeout() {
