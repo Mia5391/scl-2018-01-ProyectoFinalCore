@@ -43,12 +43,22 @@ Proceso de diseño:
 - [Sketch2 y test de usabilidad](https://drive.google.com/open?id=1USSgs6hFlF5LqX2MDuVnpzvwizwYHMb-)
 - [Sketch3 y lista de cambios](https://drive.google.com/open?id=1tHSOdG9XXlHC7ckO3mXJbsyPrHG_4jCl)
 
-# Cambios del Mockup
 
+#Cambios realizados en el mockup
 
+Los cambios realizados fueron en función de decisiones ejecutivas hechas en el equipo, con el fin de visualizar la información. 
+
+Se empezó por una vista básica de las pantallas que formarán parte de la aplicación. (link1)
+De ahí se fue añadiendo el flujo y despliegue paso a paso, para tener una mejor idea del flujo para los distintos usuarios. (link2)
+
+En la tercera iteración optimizamos las funcionalidades de acuerdo a lo que quisimos alcanzar en nuestra primera iteración funcional. (link3)
 
 - [Mockup1](https://www.figma.com/file/TgrNlWctUcmQimOHDyiwQ9Ye/Sistema-de-registro-1)
 - [Mockup2](https://www.figma.com/file/naNj19U2FidQZCPvdaprVb/Sistema-de-registro-2)
 - [Mockup3](https://www.figma.com/file/97mOuNCJBEoEfN2FrrMPQ1/Sistema-de-registro-final?node-id=0%3A1)
 - [Prototipo alta fidelidad](https://www.figma.com/proto/97mOuNCJBEoEfN2FrrMPQ1/Sistema-de-registro-final?node-id=59%3A519&scaling=scale-down)
 
+# Proyecto
+
+Para acceder al demo del sistema de registro:
+[Sistema de registro](https://estephanyc.github.io/scl-2018-01-ProyectoFinalCore/public/)
