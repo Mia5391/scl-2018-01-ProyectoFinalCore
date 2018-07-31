@@ -22,7 +22,8 @@
     <div class="container">
         <div class="row">
             <div class="col s6">
-                <img src="../img/logo-black.png" width="60" alt="">
+                <a href="../index.html">
+                    <img src="../img/logo-black.png" width="60" alt=""></a>
             </div>
             <div class="col s4">
                 <a class="link right" href="../User/register.html"> Registrar visita
@@ -35,13 +36,17 @@
 
         </div>
         <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">search
-                </i>
-                <input id="search" type="text" class="validate">
-                <label for="icon_prefix">Buscar por credencial</label>
+            <div class="input-field col s6 ">
+                <select id="filterOrganization" required>
+    <option value="" disabled selected>Filtrar por organización</option>
+<option value="todos">Todas</option>
+    <option value="Laboratoria">Laboratoria</option>
+    <option value="Aguas lab">Aguas lab</option>
+    <option value="Robotics">Robotics lab</option>
+    <option value="Fabrica de medios">Fabrica de medios</option>
+    <option value="Cafe altura">Cafe altura</option>
+</select>
             </div>
-            <div id="visitorsCont"></div>
             <div class="col s12">
                 <div id="visitorList"></div>
             </div>
@@ -49,6 +54,8 @@
     </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="../firebase/app.js"></script>
     <script src="./assets/main.js"></script>
 </body>

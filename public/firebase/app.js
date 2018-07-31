@@ -59,3 +59,12 @@ window.searchVisitorInside = (credencial) =>{
     }
   )
 }
+window.searchByDestino = (empresa) => {
+  return firebase.database().ref('visitors').once("value").then(
+    (results) => {
+      return Object.entries(results.val()).filter(
+        visitor => visitor[1].destination == empresa
+      )
+    }
+  )
+}
