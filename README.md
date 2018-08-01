@@ -11,6 +11,7 @@ El sistema de registro está enfocado en modernizar el proceso de registro de vi
 
 Para acceder al demo del sistema de registro:
 [Sistema de registro](https://mia5391.github.io/scl-2018-01-ProyectoFinalCore/public/)
+*Para probar el demo administrador usar email: admin@gmail.com contraseña: admin
 
 ## Usuarios
 
